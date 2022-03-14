@@ -24,7 +24,9 @@ form.addEventListener("submit", (e) => {
   let age = handleAge(e);
   if (checkNumber(age)) {
     let result = calculate(age);
-    if (result) window.location = "success.html";
+    if (result) {
+      window.location.href = "/success.html";
+    }
   } else {
     console.log(`enter valid number as age`);
   }
