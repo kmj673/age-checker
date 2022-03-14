@@ -25,3 +25,22 @@ a:hover {
 span {
   background-color: var(--orange);
 }
+h1 {
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+p {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
