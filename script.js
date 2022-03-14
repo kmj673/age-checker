@@ -17,14 +17,14 @@ function checkNumber(age) {
 
 function calculate(age) {
   let eighteenOlder = age >= 18 ? true : false;
-  console.log(eighteenOlder);
+  return eighteenOlder;
 }
 
 form.addEventListener("submit", (e) => {
   let age = handleAge(e);
-  console.log(checkNumber(age));
   if (checkNumber(age)) {
-    calculate(age);
+    let result = calculate(age);
+    if (result) window.location = "success.html";
   } else {
     console.log(`enter valid number as age`);
   }
