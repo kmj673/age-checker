@@ -14,8 +14,9 @@
 - [ ] user(age >= 18) will see success html page
 - [ ] user(age < 18>) will see failure html page
 
-Tasks <br>
-1.Break up the tasks above into different user stories. <br>
-2.Create an issue for each user story in a new GitHub repository. <br>
-3.Attempt to build the three pages, age checker input box and button. <br>
-4.If you complete the three main tasks above, feel free to enhance the pages to further demonstrate your HTML and CSS skills with any left-over time you may have.
+## Tasks
+
+1. Break up the tasks above into different user stories.
+2. Create an issue for each user story in a new GitHub repository.
+3. Attempt to build the three pages, age checker input box and button.
+4. If you complete the three main tasks above, feel free to enhance the pages to further demonstrate your HTML and CSS skills with any left-over time you may have.
