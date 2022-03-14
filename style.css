@@ -22,3 +22,6 @@ a {
 a:hover {
   background-color: var(--orange);
 }
+span {
+  background-color: var(--orange);
+}

@@ -1,5 +1,5 @@
 const form = document.querySelector("#age");
-
+const output = document.querySelector("output");
 function handleAge(e) {
   e.preventDefault();
   let formData = new FormData(form);
@@ -15,6 +15,10 @@ function checkNumber(age) {
   return numberOrNot;
 }
 
+function minusNumber(age) {
+  if (age < 0) return false;
+}
+
 function calculate(age) {
   let eighteenOlder = age >= 18 ? true : false;
   return eighteenOlder;
@@ -22,11 +26,13 @@ function calculate(age) {
 
 form.addEventListener("submit", (e) => {
   let age = handleAge(e);
-  if (checkNumber(age)) {
+  if (checkNumber(age) && minusNumber(age)) {
     let result = calculate(age);
     if (result) window.location.href = "/success.html";
     if (!result) window.location.href = "/failure.html";
   } else {
-    console.log(`enter valid number as age`);
+    let span = document.createElement("span");
+    span.textContent = `${age} is not valid`;
+    output.appendChild(span);
   }
 });
