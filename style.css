@@ -6,3 +6,12 @@
 body {
   font-family: system-ui, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.center {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
