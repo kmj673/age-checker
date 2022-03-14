@@ -17,6 +17,7 @@ function checkNumber(age) {
 
 function minusNumber(age) {
   if (age < 0) return false;
+  else return true;
 }
 
 function calculate(age) {
@@ -25,11 +26,12 @@ function calculate(age) {
 }
 
 form.addEventListener("submit", (e) => {
+  output.innerHTML = "";
   let age = handleAge(e);
   if (checkNumber(age) && minusNumber(age)) {
     let result = calculate(age);
     if (result) window.location.href = "/success.html";
-    if (!result) window.location.href = "/failure.html";
+    else window.location.href = "/failure.html";
   } else {
     let span = document.createElement("span");
     span.textContent = `${age} is not valid`;
