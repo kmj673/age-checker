@@ -8,7 +8,7 @@
 
 ## user journey
 
-- [ ] if user enter number in the input
+- [ ] enter number in the input
 - [ ] press check button
 - [ ] age will be checked if it is older than 18 or not
 - [ ] user(age >= 18) will see success html page
